@@ -30,6 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     animateArticles();
 
+    // Animation d'apparition du footer
+    const footer = document.querySelector('.footer-animated');
+    if (footer) {
+        footer.style.opacity = 0;
+        setTimeout(() => {
+            footer.style.transition = 'opacity 1.2s cubic-bezier(.77,0,.18,1), transform 1.2s cubic-bezier(.77,0,.18,1)';
+            footer.style.opacity = 1;
+            footer.style.transform = 'translateY(0)';
+        }, 400);
+    }
+
     // Animation sur les tableaux
     const tables = document.querySelectorAll('table');
     tables.forEach(table => {
