@@ -362,7 +362,7 @@ tr:nth-child(even) {
 }
 
 .footer-animated {
-    background: linear-gradient(90deg, #222 60%, #1abc9c 100%);
+    background: linear-gradient(90deg, #1abc9c 60%, #388e3c 100%);
     color: #fff;
     text-align: center;
     padding: 22px 0 14px 0;
@@ -370,8 +370,8 @@ tr:nth-child(even) {
     border-radius: 30px 30px 0 0;
     box-shadow: 0 0 24px #1abc9c33;
     opacity: 0;
-    transform: translateY(40px);
-    animation: footerFadeIn 1.2s cubic-bezier(.77,0,.18,1) 0.3s forwards;
+    transform: translateY(40px) scale(0.98);
+    animation: none;
 }
 .footer-content {
     display: flex;
@@ -381,8 +381,11 @@ tr:nth-child(even) {
 }
 .footer-logo {
     font-size: 2.1em;
-    animation: logoBounce 1.6s infinite alternate cubic-bezier(.77,0,.18,1);
     display: inline-block;
+    transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+}
+.footer-logo.animated {
+    animation: logoBounce 1.6s infinite alternate cubic-bezier(.77,0,.18,1);
 }
 .footer-text {
     font-size: 1.1em;
@@ -397,18 +400,15 @@ tr:nth-child(even) {
     text-decoration: none;
     font-weight: 600;
     margin: 0 4px;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s, text-shadow 0.3s, background 0.3s, box-shadow 0.3s;
     position: relative;
+    padding: 2px 8px;
+    border-radius: 6px;
 }
 .footer-links a:hover {
     color: #fff;
-    text-shadow: 0 2px 12px #1abc9c99;
-}
-@keyframes footerFadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    background: #388e3c;
+    box-shadow: 0 2px 12px #1abc9c99;
 }
 @keyframes logoBounce {
     0% { transform: translateY(0); }
