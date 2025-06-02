@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Animation d'apparition et d'effets JS pour le footer
     const footer = document.querySelector('.footer-animated');
     if (footer) {
         footer.style.opacity = 0;
@@ -18,11 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
             footer.style.transition = 'opacity 1.1s cubic-bezier(.77,0,.18,1), transform 1.1s cubic-bezier(.77,0,.18,1)';
             footer.style.opacity = 1;
             footer.style.transform = 'translateY(0) scale(1)';
-            // Animation du logo
             const logo = footer.querySelector('.footer-logo');
             if (logo) logo.classList.add('animated');
         }, 400);
-        // Animation sur hover du footer
         footer.addEventListener('mouseenter', () => {
             footer.style.boxShadow = '0 0 40px #1abc9c77, 0 0 0 8px #388e3c22';
         });
@@ -45,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-   
     const tables = document.querySelectorAll('table');
     tables.forEach(table => {
         table.addEventListener('mouseenter', () => {
@@ -55,6 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
             table.style.boxShadow = '';
         });
     });
-
-   
 });
