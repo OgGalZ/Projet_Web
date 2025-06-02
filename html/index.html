@@ -8,9 +8,9 @@
     <script src="../js/forms.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="header-container">
-            <h1>La Vie Terrestre</h1>
+            <h1 class="site-title">🌱 La Vie Terrestre</h1>
             <nav>
                 <ul class="nav-list">
                     <li><a href="index.html">Accueil</a></li>
@@ -22,81 +22,58 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Bienvenue sur La Vie Terrestre</h2>
-                <p>Notre planète regorge de vie, de paysages variés et d’écosystèmes fascinants. Ce site vous invite à explorer la richesse de la biodiversité terrestre, à comprendre les menaces qui pèsent sur elle et à découvrir comment chacun peut agir pour préserver notre environnement.</p>
-                <ul class="intro-list">
-                    <li>🌱 Comprendre la biodiversité et ses enjeux</li>
-                    <li>🔥 Identifier les menaces majeures</li>
-                    <li>🌍 Découvrir des solutions concrètes</li>
-                    <li>🤝 S’engager pour la planète</li>
-                </ul>
-                <button id="learnMoreBtn">En savoir plus</button>
+        <section class="hero-modern">
+            <div class="hero-modern-content">
+                <h2>Préservons la vie terrestre</h2>
+                <p>Explorez la biodiversité, comprenez les menaces et découvrez comment agir pour la planète.</p>
+                <a href="#solutions" class="btn hero-btn">Découvrir les solutions</a>
             </div>
-            <img src="../img/earth.jpg" alt="Image de la Terre" class="hero-image">
+            <div class="hero-modern-img">
+                <img src="../img/earth.jpg" alt="Image de la Terre" />
+            </div>
         </section>
-        <section class="objectif-15">
+        <section class="objectif-15-modern">
             <h2>L’Objectif 15 : Vie Terrestre</h2>
-            <p>L’Objectif de Développement Durable n°15 vise à préserver et restaurer les écosystèmes terrestres, à gérer durablement les forêts, à lutter contre la désertification, à enrayer et inverser la dégradation des terres et à mettre fin à l’appauvrissement de la biodiversité.</p>
-            <ul>
-                <li>Préserver la biodiversité</li>
-                <li>Protéger les espèces menacées</li>
-                <li>Restaurer les écosystèmes dégradés</li>
-                <li>Promouvoir une gestion durable des ressources naturelles</li>
-            </ul>
-            <img src="../img/forest.jpg" alt="Forêt préservée" class="objectif-img">
-        </section>
-        <section class="articles-preview">
-            <h2>Articles à la une</h2>
-            <div class="articles-grid">
-                <article class="preview-card">
-                    <img src="../img/forest.jpg" alt="Forêt tropicale">
-                    <div>
-                        <h4>Les forêts, poumons de la planète</h4>
-                        <p>Les forêts abritent 80% de la biodiversité terrestre. Elles jouent un rôle clé dans la régulation du climat et la préservation des sols.</p>
-                        <a href="biodiversité.html#forets">Lire l'article</a>
-                    </div>
-                </article>
-                <article class="preview-card">
-                    <img src="../img/climate.jpg" alt="Changement climatique">
-                    <div>
-                        <h4>Changement climatique : quels impacts ?</h4>
-                        <p>Le réchauffement global bouleverse les écosystèmes, provoque des catastrophes naturelles et menace la survie de nombreuses espèces.</p>
-                        <a href="menace.html#climat">Lire l'article</a>
-                    </div>
-                </article>
-                <article class="preview-card">
-                    <img src="../img/plastic.jpg" alt="Pollution plastique">
-                    <div>
-                        <h4>Pollution plastique : un fléau mondial</h4>
-                        <p>Des millions de tonnes de plastique polluent les sols et les océans, mettant en danger la faune et la flore.</p>
-                        <a href="menace.html#pollution">Lire l'article</a>
-                    </div>
-                </article>
+            <div class="objectif-grid">
+                <div class="objectif-card">
+                    <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke="#1abc9c" stroke-width="4" fill="#e8f5e9"/></svg>
+                    <h3>Préserver la biodiversité</h3>
+                    <p>Protéger la diversité des espèces et des écosystèmes pour l’équilibre de la planète.</p>
+                </div>
+                <div class="objectif-card">
+                    <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="8" stroke="#388e3c" stroke-width="4" fill="#f1f8e9"/></svg>
+                    <h3>Restaurer les écosystèmes</h3>
+                    <p>Agir pour réparer les milieux naturels dégradés et favoriser leur résilience.</p>
+                </div>
+                <div class="objectif-card">
+                    <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><path d="M8 40L40 8" stroke="#1abc9c" stroke-width="4"/><circle cx="8" cy="40" r="4" fill="#1abc9c"/><circle cx="40" cy="8" r="4" fill="#388e3c"/></svg>
+                    <h3>Gérer durablement</h3>
+                    <p>Utiliser les ressources naturelles de façon responsable pour les générations futures.</p>
+                </div>
             </div>
         </section>
         <section class="engagement">
             <h2>Pourquoi s’engager ?</h2>
-            <div class="engagement-content">
-                <div>
-                    <h4>Préserver la santé humaine</h4>
+            <div class="engagement-list">
+                <div class="engagement-block">
+                    <h3>Préserver la santé humaine</h3>
                     <p>Un environnement sain est essentiel à notre bien-être. La dégradation de la nature a des conséquences directes sur notre santé.</p>
                 </div>
-                <div>
-                    <h4>Assurer un avenir durable</h4>
+                <div class="engagement-block">
+                    <h3>Assurer un avenir durable</h3>
                     <p>Protéger la biodiversité, c’est garantir des ressources pour les générations futures et maintenir l’équilibre des écosystèmes.</p>
                 </div>
-                <div>
-                    <h4>Agir à son échelle</h4>
+                <div class="engagement-block">
+                    <h3>Agir à son échelle</h3>
                     <p>Chacun peut contribuer, par des gestes simples ou des engagements plus forts, à la préservation de la vie terrestre.</p>
                 </div>
             </div>
         </section>
-        <section class="solutions">
+        <section class="solutions" id="solutions">
             <h2>Des solutions pour la vie terrestre</h2>
             <div class="solutions-grid">
                 <div class="solution-card">
+                    <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" stroke="#1abc9c" stroke-width="3" fill="#e8f5e9"/></svg>
                     <h4>Adopter des gestes éco-responsables</h4>
                     <ul>
                         <li>Réduire, réutiliser, recycler</li>
@@ -105,6 +82,7 @@
                     </ul>
                 </div>
                 <div class="solution-card">
+                    <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><rect x="6" y="6" width="24" height="24" rx="6" stroke="#388e3c" stroke-width="3" fill="#f1f8e9"/></svg>
                     <h4>Protéger les espaces naturels</h4>
                     <ul>
                         <li>Participer à des actions de reforestation</li>
@@ -113,6 +91,7 @@
                     </ul>
                 </div>
                 <div class="solution-card">
+                    <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><path d="M6 30L30 6" stroke="#1abc9c" stroke-width="3"/><circle cx="6" cy="30" r="3" fill="#1abc9c"/><circle cx="30" cy="6" r="3" fill="#388e3c"/></svg>
                     <h4>Sensibiliser et éduquer</h4>
                     <ul>
                         <li>Informer son entourage</li>
@@ -133,8 +112,8 @@
             <span class="footer-logo">🌱</span>
             <span class="footer-text">&copy; 2025 La Vie Terrestre — Protégeons la planète ensemble !</span>
             <span class="footer-links">
-                <a href="a_propos.html">À propos</a> ·
-                <a href="https://www.un.org/sustainabledevelopment/fr/biodiversity/" target="_blank">ONU Objectif 15</a>
+                <a href="a_propos.html">À propos</a>
+                · <a href="https://www.un.org/sustainabledevelopment/fr/biodiversity/" target="_blank">ONU Objectif 15</a>
             </span>
         </div>
     </footer>
