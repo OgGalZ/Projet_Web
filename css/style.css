@@ -623,18 +623,132 @@ footer {
     background: linear-gradient(90deg, #e8f5e9 60%, #f1f8e9 100%);
     border-radius: 2rem;
 }
+.vie-presentation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    justify-content: center;
+    margin: 2.5rem 0 2.5rem 0;
+}
+.vie-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 16px #1abc9c22;
+    padding: 2rem 1.3rem 1.5rem 1.3rem;
+    max-width: 350px;
+    min-width: 260px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.vie-card:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 8px 32px #1abc9c33;
+}
+.vie-card h3 {
+    color: #1abc9c;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.vie-card ul {
+    text-align: left;
+    margin-bottom: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding-left: 1.1rem;
+}
+.vie-cta {
+    color: #388e3c;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.vie-btn {
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 2.1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: auto;
+    box-shadow: 0 2px 12px #1abc9c22;
+    transition: background 0.18s, color 0.18s;
+    text-decoration: none;
+    display: inline-block;
+}
+.vie-btn:hover, .vie-btn:focus {
+    background: #388e3c;
+    color: #fff;
+}
 @media (max-width: 900px) {
-    .objectif-grid, .solutions-grid, .engagement-list {
+    .hero-modern {
         flex-direction: column;
+        text-align: center;
+        padding: 32px 2vw 24px 2vw;
+    }
+    .hero-modern-content {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .hero-modern-img img {
+        max-width: 90vw;
+    }
+    .objectif-grid, .solutions-grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .vie-presentation-grid {
+        flex-direction: column;
+        align-items: center;
         gap: 1.5rem;
     }
+    .vie-card {
+        max-width: 95vw;
+    }
 }
+
 @media (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th, td {
+        text-align: left;
+        padding: 10px 4px;
+    }
+    th {
+        background: #1abc9c;
+        color: #fff;
+    }
     .header-glass, .footer-glass, .hero-glass, .objectif-glass, .solutions-glass, .cta-glass {
         border-radius: 0.7rem;
         padding: 1rem 0.3rem;
     }
     .img-glass {
         border-radius: 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 8px;
+    }
+    .site-title {
+        font-size: 1.3em;
+    }
+    .nav-list {
+        gap: 12px;
+        font-size: 0.98em;
+    }
+    .objectif-card, .solution-card {
+        padding: 18px 8px 14px 8px;
+    }
+    .cta-section {
+        padding: 18px 4px 14px 4px;
     }
 }
