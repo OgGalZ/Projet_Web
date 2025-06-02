@@ -466,6 +466,13 @@ footer {
         background: #1abc9c;
         color: #fff;
     }
+    .header-glass, .footer-glass, .hero-glass, .objectif-glass, .solutions-glass, .cta-glass {
+        border-radius: 0.7rem;
+        padding: 1rem 0.3rem;
+    }
+    .img-glass {
+        border-radius: 0.7rem;
+    }
 }
 
 @media (max-width: 600px) {
